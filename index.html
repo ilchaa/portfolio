@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilija | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4e11c0df07.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <span class="logo"><span>i</span>Design<span>.</span></span>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>Ilija</span><br>Stojanovic From Serbia</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------- About --------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title-about">About Me</h1>
+                    <p>Hi, my name is Ilija. I am from Serbia,<br>
+                        I like to design and during my schooling, I became interested<br>
+                        in graphic and web design. I started learning about it 3 years ago,<br>
+                        and I can say that i have expirience in that field. I can fulfill your every wish.<br>
+                        I love what I do and I think that is the key for successful carrer.<br>
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('expirience')">Expirience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Brand Identity Designer</span><br>Designing full brand identity content</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="expirience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Tehnical Service at Nifon Security DOO</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2022</span><br>Multimedia - ETS "Mija Stanimirovic"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------- Services --------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>Web designing is the process of planning, conceptualizing,
+                        and implementing the plan for designing a website in a way that
+                        is functional and offers a good user experience. User experience is
+                        central to the web designing process. Websites have an array of elements
+                        presented in ways that make them easy to navigate.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development, also known as website development,
+                        refers to the tasks associated with creating, building,
+                        and maintaining websites and web applications that run
+                        online on a browser. It may, however, also include web design,
+                        web programming, and database management.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Brand Identity Design</h2>
+                    <p>Brand identity design encompasses all your graphic design decisions
+                        that define a brand. It includes a company's visual identity,
+                        such as the logo, color palette, and graphic elements, as well as
+                        marketing materials such as business cards and product packaging.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------- Portfolio / My Work --------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work-2.png">
+                    <div class="layer">
+                        <h3>Work 2</h3>
+                        <p>Description for work2 in this p tag.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-1.png">
+                    <div class="layer">
+                        <h3>PutnikCaffe.</h3>
+                        <p>This is my first project. I did a web design and development for their coffee bar.</p>
+                        <a href="https://www.putnikcaffe.rs"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-3.png">
+                    <div class="layer">
+                        <h3>Work 3</h3>
+                        <p>Description for work3 in this p tag.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------------- Contact --------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> contact@idesign.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 061 4543 225</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/stojanovicc_i/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="files/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/stojanovicilija03@gmail.com" method="POST">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Ilija. All rights reserved.</p>
+        </div>
+
+        <!-- --------------------- JavaScript --------------------- -->
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+</body>
+
+</html>
